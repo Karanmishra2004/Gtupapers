@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTU Previous Year Questions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .coming-soon {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .coming-soon h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .coming-soon p {
+            font-size: 18px;
+            color: #666;
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GTU Syllabus & PYQs Hub</h1>
+        <p>Your go-to source for GTU BE syllabus and question papers.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="pyq.html">PYQ</a></li>
+                <li><a href="paper-analysis.html">Paper Analysis</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>GTU Previous Year Questions Finder</h1>
+        
+        <div class="coming-soon">
+            <h2>Coming Soon!</h2>
+            <p>We're working hard to bring you the best collection of GTU Previous Year Questions.</p>
+            <p>Stay tuned for an amazing resource to ace your exams!</p>
+            <div class="countdown" id="countdown"></div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer
+        const countdownDate = new Date("2024-06-01T00:00:00").getTime();
+        const countdownElement = document.getElementById("countdown");
+
+        const countdownTimer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `Launch in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                countdownElement.innerHTML = "Launched!";
+            }
+        }, 1000);
+    </script>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 GTU Syllabus & PYQs Hub. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

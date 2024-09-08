@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find and download GTU BE syllabus and previous year question papers for all engineering branches. Your one-stop resource for GTU academic materials.">
+    <meta name="keywords" content="GTU, syllabus, question papers, engineering, BE, Gujarat Technological University, GTU syllabus, GTU question papers, GTU BE, GTU engineering">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="GTU Syllabus Finder | Download BE Syllabus and Question Papers">
+    <meta property="og:description" content="Find and download GTU BE syllabus and previous year question papers for all engineering branches. Your one-stop resource for GTU academic materials.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourdomain.com/index.html">
+    <meta property="og:image" content="https://www.yourdomain.com/images/og-image.jpg">
+    <title>GTU Syllabus Finder | Download BE Syllabus and Question Papers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <link rel="canonical" href="https://www.yourdomain.com/index.html">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+</head>
+<body>
+    <header>
+        
+        <h1>GTU Syllabus & PYQs Hub</h1>
+        <p>Your go-to source for GTU BE syllabus and question papers.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="pyq.html">PYQ</a></li>
+                <li><a href="paper-analysis.html">Paper Analysis</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+    <h1>GTU Syllabus Finder</h1>
+    
+    <!-- Branch Selection -->
+    <select id="branchSelect">
+        <option value="Select Branch">Select Branch</option>
+        <option value="01">01 - AERONAUTICAL ENGINEERING</option>
+        <option value="02">02 - AUTOMOBILE ENGINEERING</option>
+        <option value="03">03 - BIO-MEDICAL ENGINEERING</option>
+        <option value="04">04 - BIO-TECHNOLOGY</option>
+        <option value="05">05 - CHEMICAL ENGINEERING</option>
+        <option value="06">06 - CIVIL ENGINEERING</option>
+        <option value="07">07 - COMPUTER ENGINEERING</option>
+        <option value="08">08 - ELECTRICAL & ELECTRONICS ENGINEERING</option>
+        <option value="09">09 - ELECTRICAL ENGINEERING</option>
+        <option value="10">10 - ELECTRONICS ENGINEERING</option>
+        <option value="11">11 - ELECTRONICS & COMMUNICATION ENGINEERING</option>
+        <option value="12">12 - ELECTRONICS & TELECOMMUNICATION ENGINEERING</option>
+        <option value="13">13 - ENVIRONMENTAL ENGINEERING</option>
+        <option value="14">14 - FOOD PROCESSING TECHNOLOGY</option>
+        <option value="15">15 - INDUSTRIAL ENGINEERING</option>
+        <option value="16">16 - INFORMATION TECHNOLOGY</option>
+        <option value="17">17 - INSTRUMENTATION & CONTROL ENGINEERING</option>
+        <option value="18">18 - MARINE ENGINEERING</option>
+        <option value="19">19 - MECHANICAL ENGINEERING</option>
+        <option value="20">20 - MECHATRONICS ENGINEERING</option>
+        <option value="21">21 - METALLURGY ENGINEERING</option>
+        <option value="22">22 - MINING ENGINEERING</option>
+        <option value="23">23 - PLASTIC TECHNOLOGY</option>
+        <option value="24">24 - POWER ELECTRONICS</option>
+        <option value="25">25 - PRODUCTION ENGINEERING</option>
+        <option value="26">26 - RUBBER TECHNOLOGY</option>
+        <option value="28">28 - TEXTILE PROCESSING</option>
+        <option value="29">29 - TEXTILE TECHNOLOGY</option>
+        <option value="31">31 - COMPUTER SCIENCE & ENGINEERING</option>
+        <option value="32">32 - INFORMATION & COMMUNICATION TECHNOLOGY</option>
+        <option value="34">34 - MANUFACTURING ENGINEERING</option>
+        <option value="35">35 - ENVIRONMENTAL SCIENCE & TECHNOLOGY</option>
+        <option value="36">36 - CHEMICAL TECHNOLOGY</option>
+        <option value="37">37 - ENVIRONMENTAL SCIENCE AND ENGINEERING</option>
+        <option value="39">39 - NANO TECHNOLOGY</option>
+        <option value="40">40 - CIVIL & INFRASTRUCTURE ENGINEERING</option>
+        <option value="41">41 - ROBOTICS AND AUTOMATION</option>
+        <option value="42">42 - COMPUTER SCIENCE & ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)</option>
+        <option value="43">43 - ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</option>
+        <option value="44">44 - CHEMICAL ENGINEERING (GREEN TECHNOLOGY & SUSTAINABILITY ENGINEERING)</option>
+        <option value="45">45 - COMPUTER SCIENCE & ENGINEERING (INTERNET OF THINGS AND CYBER SECURITY INCLUDING BLOCK CHAIN TECHNOLOGY)</option>
+        <option value="46">46 - COMPUTER SCIENCE & ENGINEERING (DATA SCIENCE)</option>
+        <option value="47">47 - ELECTRONICS & INSTRUMENTATION ENGINEERING</option>
+        <option value="48">48 - COMPUTER SCIENCE & ENGINEERING (CYBER SECURITY)</option>
+        <option value="49">49 - COMPUTER SCIENCE & DESIGN</option>
+        <option value="50">50 - SMART & SUSTAINABLE ENERGY</option>
+        <option value="51">51 - FOOD ENGINEERING & TECHNOLOGY</option>
+        <option value="52">52 - ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</option>
+        <option value="53">53 - PLASTICS ENGINEERING</option>
+        <option value="54">54 - ELECTRONICS AND COMMUNICATION (COMMUNICATION SYSTEM ENGINEERING)</option>
+        <option value="89">89 - MECHANICAL ENGINEERING</option>
+        <option value="AA">AA - MINOR/HONORS -INDUSTRIAL PROCESS SAFETY</option>
+        <option value="AB">AB - MINOR/HONORS -WASTE TECHNOLOGY</option>
+        <option value="AC">AC - MINOR/HONORS -CONSTRUCTION TECHNOLOGY</option>
+        <option value="AD">AD - MINOR/HONORS -NEXT GENERATION SMART VILLAGE</option>
+        <option value="AE">AE - MINOR/HONORS -INFRASTRUCTURE ENGINEERING</option>
+        <option value="AF">AF - MINOR/HONORS -SMART CITIES</option>
+        <option value="AG">AG - MINOR/HONORS -ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</option>
+        <option value="AH">AH - MINOR/HONORS -CYBER SECURITY</option>
+        <option value="AI">AI - MINOR/HONORS -INTERNET OF THINGS</option>
+        <option value="AJ">AJ - MINOR/HONORS - SOLAR ENERGY SYSTEMS</option>
+        <option value="AK">AK - MINOR/HONORS -ELECTRICAL AND COMPUTER</option>
+        <option value="AL">AL - MINOR/HONORS -ELECTRIC VEHICLES</option>
+        <option value="AM">AM - MINOR/HONORS -CONTROL SYSTEMS AND SENSORS TECHNOLOGY</option>
+        <option value="AN">AN - MINOR/HONORS -3 D PRINTING</option>
+        <option value="AO">AO - MINOR/HONORS -ROBOTICS</option>
+        <option value="AP">AP - MINOR/HONORS -ENERGY ENGINEERING</option>
+        <option value="AQ">AQ - MINOR/HONORS - GLOBAL CITIZENSHIP PERSONALITY DEVELOPMENT</option>
+        <option value="AR">AR - MINOR/HONOURS-INDUSTRIAL BASED NON DESTRUCTIVE TECHNIQUES AND PRACTICES</option>
+        <option value="AS">AS - MINOR/HONOURS-GREEN TECHNOLOGY AND SUSTAINABILITY ENGINEERING</option>
+        <option value="AT">AT - MINOR/HONOURS-DATA SCIENCE</option>
+        <option value="AU">AU - MINOR/HONOURS-FORENSIC STRUCTURAL ENGINEERING</option>
+        <option value="AV">AV - MINOR/HONOURS-COMPUTER AIDED CIVIL ENGINEERING PROCESSES</option>
+    </select>
+    <div class="search-container">
+        <!-- Search for Subjects -->
+        <input type="text" id="subjectSearch" placeholder="Search subjects by name or code" oninput="filterSubjects()">
+        
+        <!-- Download Button -->
+        <button id="downloadBtn" class="download-btn">Download Syllabus</button>
+    </div>
+
+    <!-- Subject List -->
+    <ul id="subjectList" class="subjects"></ul>
+
+    <!-- PDF Preview Container -->
+    <div id="pdfPreview" class="pdf-preview"></div>
+</div>
+
+<script>
+    const subjectsData = {
+        "11": [
+            { code: "110001", name: "Chemistry" },
+            { code: "110002", name: "Communication Skills" },
+            { code: "110003", name: "Computer Programming and Utilization" },
+            { code: "110004", name: "Elements of Civil Engineering" },
+            { code: "110005", name: "Elements of Electrical Engineering" },
+            { code: "110006", name: "Elements of Mechanical Engineering" },
+            { code: "110007", name: "Environmental Studies" },
+            { code: "110011", name: "Physics" },
+            { code: "110012", name: "Workshop" },
+            { code: "110013", name: "Engineering Graphics" },
+            { code: "110014", name: "Calculus" },
+            { code: "110015", name: "Vector Calculus and Linear Algebra" },
+            { code: "1990001", name: "Contributor Personality Development" },
+            { code: "2110002", name: "Communication Skills" },
+            { code: "2110003", name: "Computer Programming And Utilization" },
+            { code: "2110005", name: "Elements of Electrical Engineering" },
+            { code: "2110006", name: "Elements of Mechanical Engineering" },
+            { code: "2110007", name: "Environmental Studies" },
+            { code: "2110011", name: "Physics" },
+            { code: "2110013", name: "Engineering Graphics" },
+            { code: "2110014", name: "Calculus" },
+            { code: "2110015", name: "Vector Calculus And Linear Algebra" },
+            { code: "2110016", name: "Basic Electronics" },
+            { code: "2110017", name: "Electrical and Electronics Workshop" },
+            { code: "2990001", name: "Contributor Personality Development" },
+            { code: "3110001", name: "Chemistry" },
+            { code: "3110002", name: "English" },
+            { code: "3110003", name: "Programming for Problem Solving" },
+            { code: "3110005", name: "Basic Electrical Engineering" },
+            { code: "3110006", name: "Basic Mechanical Engineering" },
+            { code: "3110007", name: "Environmental Sciences" },
+            { code: "3110012", name: "Workshop/ Manufacturing Practices" },
+            { code: "3110013", name: "Engineering Graphics & Design" },
+            { code: "3110014", name: "Mathematics - 1" },
+            { code: "3110015", name: "Mathematics - 2" },
+            { code: "3110016", name: "Basic Electronics" },
+            { code: "3110017", name: "Induction Program" },
+            { code: "3110018", name: "Physics" },
+       
+            { code: "130002", name: "Advanced Engineering Mathematics" },
+            { code: "130701", name: "Digital Logic Design" },
+            { code: "130901", name: "Circuits and Networks" },
+            { code: "131101", name: "Basic Electronics" },
+            { code: "131102", name: "Simulation and Design Tools" },
+            { code: "131103", name: "Electronics Workshop" },
+            { code: "131701", name: "Electrical Machines" },
+        
+            { code: "2130002", name: "Advance Engineering Mathematics" },
+            { code: "2130004", name: "Engineering Economics and Management" },
+            { code: "2130005", name: "Design Engineering I-A" },
+            { code: "2130901", name: "Circuits and Networks" },
+            { code: "2131004", name: "Digital Electronics" },
+            { code: "2131005", name: "Electrical Machines" },
+            { code: "2131006", name: "Electronic Devices and Circuits" },
+        
+            { code: "3130004", name: "Effective Technical Communication" },
+            { code: "3130006", name: "Probability and Statistics" },
+            { code: "3130007", name: "Indian Constitution" },
+            { code: "3130008", name: "Design Engineering - I A" },
+            { code: "3131101", name: "Control Systems" },
+            { code: "3131102", name: "Digital System Design" },
+            { code: "3131103", name: "Network Theory" },
+            { code: "140001", name: "Mathematics-IV" },
+            { code: "140002", name: "Management-I" },
+            { code: "140701", name: "Microprocessor And Interfacing" },
+            { code: "141101", name: "Advance Electronics" },
+            { code: "141102", name: "Communication Engineering" },
+            { code: "141701", name: "Control Theory" },
+            { code: "141904", name: "Non - Conventional Energy Sources" },
+            { code: "2140002", name: "Design Engineering - I B" },
+            { code: "2141001", name: "Microprocessor and Interfacing" },
+            { code: "2141002", name: "Analog Circuit Design" },
+            { code: "2141003", name: "Electronics Measurement and Instrumentation" },
+            { code: "2141004", name: "Control System Engineering" },
+            { code: "2141005", name: "Signals and Systems" },
+            { code: "2141006", name: "Simulation and Design Tools" },
+            { code: "2150001", name: "Design Engineering - II A" },
+            { code: "2150002", name: "Institute Elective - Cyber Security" },
+            { code: "2150003", name: "Institute Elective - Disaster Management" },
+            { code: "2151001", name: "Microcontroller and Interfacing (EC)" },
+            { code: "2151002", name: "Engineering Electromagnetics" },
+            { code: "2151004", name: "Electronics and Communication" },
+            { code: "2151101", name: "Audio Video Systems" },
+            { code: "2151102", name: "Mini project" },
+            { code: "2160001", name: "Design Engineering - II B" },
+            { code: "2161001", name: "Digital Communication" },
+            { code: "2161003", name: "Antenna & Wave Propagation" },
+            { code: "2161005", name: "Optical Communication" },
+            { code: "2161006", name: "Power Electronics Devices and Circuits" },
+            { code: "2161101", name: "VLSI Technology & Design" },
+            { code: "2161102", name: "Advanced Microprocessor" },
+            { code: "2161103", name: "Telecommunication Switching systems and Networks" },
+            { code: "2170001", name: "Project - I" },
+            { code: "2171001", name: "Microwave Engineering" },
+            { code: "2171003", name: "Digital Signal Processing" },
+            { code: "2171004", name: "Wireless Communication" },
+            { code: "2171005", name: "Embedded Systems" },
+            { code: "2171007", name: "Satellite Communication" },
+            { code: "2171008", name: "Data Communication and Networking" },
+            { code: "2171102", name: "Biomedical Instrumentation" },
+            { code: "2171103", name: "Industrial Automation" },
+            { code: "2181102", name: "Fundamentals of Image Processing" },
+            { code: "2181103", name: "Radar & Navigational Aids" },
+            { code: "2181105", name: "Project – II" },
+            { code: "2181106", name: "Device Driver & Writing" },
+            { code: "2181107", name: "Testing And Verification" },
+            { code: "2181108", name: "Project II" },
+            { code: "3140005", name: "Design Engineering 1 B" },
+            { code: "3141002", name: "Analog Circuit Design" },
+            { code: "3141005", name: "Signal & Systems" },
+            { code: "3141007", name: "Professional Ethics" },
+            { code: "3141008", name: "Microprocessor & Microcontroller" },
+            { code: "3141009", name: "Electromagnetic Theory" },
+            { code: "3141010", name: "Electronic Measurement Laboratory" },
+            { code: "3150001", name: "Design Engineering - II A" },
+            { code: "3150004", name: "Contributor Personality Development Program" },
+            { code: "3150005", name: "Integrated Personality Development Course" },
+            { code: "3151103", name: "Principles of Management" },
+            { code: "3151104", name: "Analog and Digital Communication" },
+            { code: "3151105", name: "VLSI Design" },
+            { code: "3151106", name: "Power Electronics" },
+            { code: "3151107", name: "Advance Microcontroller" },
+            { code: "3151108", name: "Python Programming" },
+            { code: "3151109", name: "Industrial Automation" },
+            { code: "3151110", name: "Robotics and Automation" },
+            { code: "3160001", name: "Design Engineering II B" },
+            { code: "3160002", name: "Contributor Personality Development Program" },
+            { code: "3160003", name: "Integrated Personality Development Course" },
+            { code: "3161003", name: "Antennas and Propagation" },
+            { code: "3161005", name: "Fiber Optic Communication" },
+            { code: "3161007", name: "Computer Networks" },
+            { code: "3161008", name: "Sensors and Transducers" },
+            { code: "3161009", name: "Embedded Systems" },
+            { code: "3161010", name: "Satellite Communication" },
+            { code: "3161011", name: "Cyber Physical systems" },
+            { code: "3161012", name: "Web Technology" },
+            { code: "3161013", name: "Systems Engineering" },
+            { code: "3170001", name: "Summer Internship" },
+            { code: "3171001", name: "Microwave Theory and Techniques" },
+            { code: "3171003", name: "Digital Signal Processing" },
+            { code: "3171004", name: "Wireless Communication" },
+            { code: "3171104", name: "Biomedical Electronics" },
+            { code: "3171105", name: "Introduction of Artificial Intelligence" },
+            { code: "3171106", name: "Wireless Sensor Networks" },
+            { code: "3171107", name: "Introduction to MEMS" },
+            { code: "3171108", name: "Internet of Things" },
+            { code: "3171109", name: "Digital Image and Video Processing" },
+            { code: "3171110", name: "Radar and Navigational Aids" },
+            { code: "3171111", name: "Testing and Verification" },
+            { code: "3171112", name: "Automotive Electronics" },
+            { code: "3171113", name: "Practical aspects of Computer Vision" },
+            { code: "3171114", name: "Introduction of Machine learning" },
+            { code: "3181101", name: "Internship/Project" },
+        ],
+        "06": [
+            { code: "110001", name: "Chemistry" },
+            { code: "110002", name: "Communication Skills" },
+            { code: "110003", name: "Computer Programming and Utilization" },
+            { code: "110004", name: "Elements of Civil Engineering" },
+            { code: "110005", name: "Elements of Electrical Engineering" },
+            { code: "110006", name: "Elements of Mechanical Engineering" },
+            { code: "110007", name: "Environmental Studies" },
+            { code: "110010", name: "Mechanics of Solids" },
+            { code: "110011", name: "Physics" },
+            { code: "110012", name: "Workshop" },
+            { code: "110013", name: "Engineering Graphics" },
+            { code: "110014", name: "Calculus" },
+            { code: "110015", name: "Vector Calculus and Linear Algebra" },
+            { code: "1990001", name: "Contributor Personality Development" },
+            { code: "2110002", name: "Communication Skills" },
+            { code: "2110003", name: "Computer Programming And Utilization" },
+            { code: "2110004", name: "Elements of Civil Engineering" },
+            { code: "2110005", name: "Elements of Electrical Engineering" },
+            { code: "2110006", name: "Elements of Mechanical Engineering" },
+            { code: "2110007", name: "Environmental Studies" },
+            { code: "2110011", name: "Physics" },
+            { code: "2110012", name: "Workshop" },
+            { code: "2110013", name: "Engineering Graphics" },
+            { code: "2110014", name: "Calculus" },
+            { code: "2110015", name: "Vector Calculus And Linear Algebra" },
+            { code: "2990001", name: "Contributor Personality Development" },
+            { code: "3110001", name: "Chemistry" },
+            { code: "3110002", name: "English" },
+            { code: "3110003", name: "Programming for Problem Solving" },
+            { code: "3110004", name: "Basic Civil Engineering" },
+            { code: "3110005", name: "Basic Electrical Engineering" },
+            { code: "3110006", name: "Basic Mechanical Engineering" },
+            { code: "3110007", name: "Environmental Sciences" },
+            { code: "3110011", name: "Physics" },
+            { code: "3110012", name: "Workshop/ Manufacturing Practices" },
+            { code: "3110013", name: "Engineering Graphics & Design" },
+            { code: "3110014", name: "Mathematics - 1" },
+            { code: "3110015", name: "Mathematics - 2" },
+            { code: "3110017", name: "Induction Program" },
+            { code: "130002", name: "Advanced Engineering Mathematics" },
+            { code: "130601", name: "Surveying" },
+            { code: "130602", name: "Fluid Mechanics" },
+            { code: "130603", name: "Building and Town Planning" },
+            { code: "130604", name: "Structural Analysis-I" },
+            { code: "130605", name: "Concrete Technology" },
+            { code: "2130002", name: "Advance Engineering Mathematics" },
+            { code: "2130003", name: "Mechanics of Solids" },
+            { code: "2130005", name: "Design Engineering I-A" },
+            { code: "2130601", name: "Surveying" },
+            { code: "2130602", name: "Fluid Mechanics" },
+            { code: "2130606", name: "Geotechnics & Applied Geology" },
+            { code: "2130607", name: "Building Construction" },
+            { code: "3130004", name: "Effective Technical Communication" },
+            { code: "3130007", name: "Indian Constitution" },
+            { code: "3130008", name: "Design Engineering - I A" },
+            { code: "3130606", name: "Geotechnical Engineering" },
+            { code: "3130607", name: "Building Construction Technology" },
+            { code: "3130608", name: "Mechanics of Solids" },
+            { code: "3130609", name: "Building and Town Planning" },
+            { code: "140001", name: "Mathematics-IV" },
+            { code: "140002", name: "Management-I" },
+            { code: "140601", name: "Advanced Surveying" },
+            { code: "140602", name: "Building Construction" },
+            { code: "140603", name: "Structural Analysis-II" },
+            { code: "140604", name: "Engineering Geology" },
+            { code: "140605", name: "Advanced Strength Of Materials" },
+            { code: "2140002", name: "Design Engineering - I B" },
+            { code: "2140003", name: "Engineering Economics and Management" },
+            { code: "2140601", name: "Advanced Surveying" },
+            { code: "2140603", name: "Structural Analysis-I" },
+            { code: "2140606", name: "Numerical And Statistical Methods for Civil Engineering" },
+            { code: "2140607", name: "Buliding & Town Planning" },
+            { code: "2140608", name: "Concrete Technology" },
+            { code: "3140005", name: "Design Engineering 1 B" },
+            { code: "3140601", name: "Surveying" },
+            { code: "3140603", name: "Structural Analysis-I" },
+            { code: "3140609", name: "Civil Engineering - Societal & Global Impact" },
+            { code: "3140610", name: "Complex Variables and Partial Differential Equations" },
+            { code: "3140611", name: "Fluid Mechanics & Hydraulics" },
+            { code: "150001", name: "Management - II" },
+            { code: "150601", name: "Highway Engineering" },
+            { code: "150602", name: "Hydrology & Water Resources Engineering" },
+            { code: "150603", name: "Environmental Engineering" },
+            { code: "150604", name: "Geotechnical Engineering - I" },
+            { code: "150605", name: "Structural Analysis - III" },
+            { code: "150606", name: "Disaster Assessment Using Geospatial Techniques" },
+            { code: "2150001", name: "Design Engineering - II A" },
+            { code: "2150002", name: "Institute Elective - Cyber Security" },
+            { code: "2150003", name: "Institute Elective - Disaster Management" },
+            { code: "2150601", name: "Highway Engineering" },
+            { code: "2150602", name: "Hydrology & Water Resources Engineering" },
+            { code: "2150603", name: "Environmental Engineering" },
+            { code: "2150608", name: "Structural Analysis-II" },
+            { code: "2150609", name: "Soil Mechanics" },
+            { code: "3150001", name: "Design Engineering - II A" },
+            { code: "3150004", name: "Contributor Personality Development Program" },
+            { code: "3150005", name: "Integrated Personality Development Course" },
+            { code: "3150610", name: "Concrete Technology" },
+            { code: "3150611", name: "Transportation Engineering" },
+            { code: "3150612", name: "Design of Structures" },
+            { code: "3150613", name: "Pavement Design and Highway construction" },
+            { code: "3150614", name: "Structural analysis-II" },
+            { code: "3150615", name: "Soil Mechanics" },
+            { code: "3150616", name: "Pipeline Engineering" },
+            { code: "3150617", name: "Remote Sensing and GIS" },
+            { code: "3151108", name: "Python Programming" },
+            { code: "160601", name: "Advanced Construction Technology" },
+            { code: "160602", name: "Applied Fluid Mechanics" },
+            { code: "160603", name: "Railway Bridge and Tunnel Engineering" },
+            { code: "160604", name: "Water & Waste Water Engineering" },
+            { code: "160605", name: "Earthquake Engineering" },
+            { code: "160606", name: "Geotechnical Engineering - II" },
+            { code: "2160001", name: "Design Engineering - II B" },
+            { code: "2160601", name: "Advanced Construction and Equipments" },
+            { code: "2160602", name: "Applied Fluid Mechanics" },
+            { code: "2160603", name: "Railway, Bridge & Tunnel Engineering" },
+            { code: "2160604", name: "Water & Waste Water Engineering" },
+            { code: "2160607", name: "Elementary Structural Design" },
+            { code: "2160608", name: "Urban Transportation system" },
+            { code: "2160609", name: "Computational Mechanics" },
+            { code: "3160001", name: "Design Engineering II B" },
+            { code: "3160002", name: "Contributor Personality Development Program" },
+            { code: "3160003", name: "Integrated Personality Development Course" },
+            { code: "3160608", name: "Urban Transportation Planning" },
+            { code: "3160610", name: "Water Resources Engineering and Hydrology" },
+            { code: "3160611", name: "Environmental Engineering" },
+            { code: "3160612", name: "Design of Reinforced Concrete structures" },
+            { code: "3160613", name: "Rock Mechanics and Tunneling" },
+            { code: "3160614", name: "Contracts Management" },
+            { code: "3160615", name: "Traffic Engineering and Management" },
+            { code: "3160616", name: "Foundation Engineering" },
+            { code: "3160617", name: "Construction Equipment and Automation" },
+            { code: "3160618", name: "Open Channel flow" },
+            { code: "3160619", name: "Soft Computing Techniques" },
+            { code: "3160620", name: "Instrumentation and Sensors" },
+            { code: "3160621", name: "Earthquake Engineering" },
+            { code: "3160622", name: "Disaster Management" },
+            { code: "170001", name: "Project - I" },
+            { code: "170601", name: "Construction Management And Equipments" },
+            { code: "170602", name: "Irrigation Engineering" },
+            { code: "170603", name: "Structural Design-I" },
+            { code: "170604", name: "Urban Transportation System" },
+            { code: "170605", name: "Advanced Structural Analysis" },
+            { code: "170606", name: "Application Of Geoinformatics In Civil Engineering" },
+            { code: "2170003", name: "Project - I" },
+            { code: "2170606", name: "Application of Geoinformatics in Civil Engineering" },
+            { code: "2170607", name: "Design of Reinforced Concrete Structures" },
+            { code: "2170609", name: "Irrigation Engineering" },
+            { code: "2170610", name: "Professional Practices and Valuation" },
+            { code: "2170611", name: "Infrastructure Engineering And Management" },
+            { code: "2170612", name: "Earthquake Engineering" },
+            { code: "2170613", name: "Traffic Engineering" },
+            { code: "3170001", name: "Summer Internship" },
+            { code: "3170609", name: "Irrigation Engineering" },
+            { code: "3170614", name: "Construction Engineering and Management" },
+            { code: "3170615", name: "Engineering Economics, Estimation and Costing" },
+            { code: "3170616", name: "Retrofitting of structures" },
+            { code: "3170617", name: "Application of GIS in Civil Engineering" },
+            { code: "3170618", name: "Design of Steel Structures" },
+            { code: "3170619", name: "Railway and Airport Engineering" },
+            { code: "3170620", name: "Computational Geotechnics" },
+            { code: "3170621", name: "Design of hydraulic structures" },
+            { code: "3170622", name: "Precast Construction" },
+            { code: "3170623", name: "Port and Harbour Engineering" },
+            { code: "3170624", name: "Design of Prestressed Concrete structures" },
+            { code: "3170625", name: "Environmental Impact Assessment" },
+            { code: "3170626", name: "Design of Industrial Structures" },
+            { code: "3170627", name: "ICT For Development" },
+            { code: "3170628", name: "Infrastructure for smart Cities" },
+            { code: "3170629", name: "Green Built Environment" },
+            { code: "180601", name: "Design of Hydraulic Structures" },
+            { code: "180602", name: "Dock, Harbour & Airport Engineering" },
+            { code: "180603", name: "Professional Practice & Valuation" },
+            { code: "180604", name: "Structural Design II" },
+            { code: "180605", name: "Project - II" },
+            { code: "180606", name: "Irrigation Water Management" },
+            { code: "180607", name: "Repairs and Rehabilitation Of Structures" },
+            { code: "180608", name: "Air Pollution Control" },
+            { code: "2180601", name: "Design of Hydrauilic Structures" },
+            { code: "2180602", name: "Harbour & Airport Engineering" },
+            { code: "2180605", name: "Project -II" },
+            { code: "2180607", name: "Repairs & Rehabilitation of Concrete Structures" },
+            { code: "2180609", name: "Foundation Engineering" },
+            { code: "2180610", name: "Design of Steel Structures" },
+            { code: "2180611", name: "Construction Management" },
+            { code: "2180612", name: "Design Of Prestressed Concrete Structures & Bridges" },
+            { code: "2180613", name: "Glass Facade Engineering" },
+            { code: "3180601", name: "Internship/Project" }
+        ],
+        "12": [
+            { code: "223456", name: "Database Management Systems" },
+            { code: "223457", name: "Web Technologies" }
+        ],
+        "13": [
+            { code: "323456", name: "Thermodynamics" },
+            { code: "323457", name: "Fluid Mechanics" }
+        ],
+        "19":[
+            { code: "110001", name: "Chemistry" },
+            { code: "110002", name: "Communication Skills" },
+            { code: "110003", name: "Computer Programming and Utilization" },
+            { code: "110004", name: "Elements of Civil Engineering" },
+            { code: "110005", name: "Elements of Electrical Engineering" },
+            { code: "110006", name: "Elements of Mechanical Engineering" },
+            { code: "110007", name: "Environmental Studies" },
+            { code: "110010", name: "Mechanics of Solids" },
+            { code: "110011", name: "Physics" },
+            { code: "110012", name: "Workshop" },
+            { code: "110013", name: "Engineering Graphics" },
+            { code: "110014", name: "Calculus" },
+            { code: "110015", name: "Vector Calculus and Linear Algebra" },
+            { code: "1990001", name: "Contributor Personality Development" },
+            { code: "2110002", name: "Communication Skills" },
+            { code: "2110003", name: "Computer Programming And Utilization" },
+            { code: "2110004", name: "Elements of Civil Engineering" },
+            { code: "2110005", name: "Elements of Electrical Engineering" },
+            { code: "2110006", name: "Elements of Mechanical Engineering" },
+            { code: "2110007", name: "Environmental Studies" },
+            { code: "2110011", name: "Physics" },
+            { code: "2110012", name: "Workshop" },
+            { code: "2110013", name: "Engineering Graphics" },
+            { code: "2110014", name: "Calculus" },
+            { code: "2110015", name: "Vector Calculus And Linear Algebra" },
+            { code: "2990001", name: "Contributor Personality Development" },
+            { code: "3110001", name: "Chemistry" },
+            { code: "3110002", name: "English" },
+            { code: "3110003", name: "Programming for Problem Solving" },
+            { code: "3110004", name: "Basic Civil Engineering" },
+            { code: "3110005", name: "Basic Electrical Engineering" },
+            { code: "3110006", name: "Basic Mechanical Engineering" },
+            { code: "3110007", name: "Environmental Sciences" },
+            { code: "3110011", name: "Physics" },
+            { code: "3110012", name: "Workshop/ Manufacturing Practices" },
+            { code: "3110013", name: "Engineering Graphics & Design" },
+            { code: "3110014", name: "Mathematics - 1" },
+            { code: "3110015", name: "Mathematics - 2" },
+            { code: "3110017", name: "Induction Program" },
+            { code: "130002", name: "Advanced Engineering Mathematics" },
+            { code: "130101", name: "Fluid Mechanics" },
+            { code: "131901", name: "Electrical Machines and Electronics" },
+            { code: "131902", name: "Machine Design and IndustrialDrafting" },
+            { code: "131903", name: "Manufacturing Processes -I" },
+            { code: "131904", name: "Material Science and Metallurgy" },
+            { code: "2130002", name: "Advance Engineering Mathematics" },
+            { code: "2130003", name: "Mechanics of Solids" },
+            { code: "2130005", name: "Design Engineering I-A" },
+            { code: "2131903", name: "Manufacturing Process-I" },
+            { code: "2131904", name: "Material Science & Metallurgy" },
+            { code: "2131905", name: "Engineering Thermodynamics" },
+            { code: "2131906", name: "Kinematics of Machines" },
+            { code: "3130004", name: "Effective Technical Communication" },
+            { code: "3130005", name: "Complex Variables and Partial Differential Equations" },
+            { code: "3130007", name: "Indian Constitution" },
+            { code: "3130008", name: "Design Engineering - I A" },
+            { code: "3131904", name: "Material Science and Metallurgy" },
+            { code: "3131905", name: "Engineering Thermodynamics" },
+            { code: "3131906", name: "Kinematics and Theory of Machines" },
+            { code: "140001", name: "Mathematics-IV" },
+            { code: "140002", name: "Management-I" },
+            { code: "141901", name: "Mechanical Measurement and Metrology" },
+            { code: "141902", name: "Kinematics Of Machines" },
+            { code: "141903", name: "Engineering Thermodynamics" },
+            { code: "141904", name: "Non - Conventional Energy Sources" },
+            { code: "2140002", name: "Design Engineering - I B" },
+            { code: "2140003", name: "Engineering Economics and Management" },
+            { code: "2141901", name: "Mechanical Measurement & Metrology" },
+            { code: "2141905", name: "Complex Variables and Numerical Methods" },
+            { code: "2141906", name: "Fluid Mechanics" },
+            { code: "2141907", name: "Machine Design & Industrial Drafting" },
+            { code: "2141908", name: "Manufacturing Processes -II" },
+            { code: "3140005", name: "Design Engineering 1 B" },
+            { code: "3141901", name: "Mechanical Measurement and Metrology" },
+            { code: "3141906", name: "Fluid Mechanics and Hydraulics Machines" },
+            { code: "3141907", name: "Fundamentals of Machine Design" },
+            { code: "3141908", name: "Manufacturing Processes" },
+            { code: "3141909", name: "Organisational Behaviour" },
+            { code: "150001", name: "Management - II" },
+            { code: "151901", name: "Manufacturing Processes - II" },
+            { code: "151902", name: "Theory of Machines" },
+            { code: "151903", name: "Fluid Power Engineering" },
+            { code: "151904", name: "Power Plant Engineering" },
+            { code: "151905", name: "Machine Design-I" },
+            { code: "151906", name: "Conventional Power Engineering" },
+            { code: "2150001", name: "Design Engineering - II A" },
+            { code: "2150002", name: "Institute Elective - Cyber Security" },
+            { code: "2150003", name: "Institute Elective - Diaster Management" },
+            { code: "2151902", name: "Theory of Machines" },
+            { code: "2151903", name: "Fluid Power Engineering" },
+            { code: "2151907", name: "Design of Machine Elements" },
+            { code: "2151908", name: "Control Engineering" },
+            { code: "2151909", name: "Heat Transfer" },
+            { code: "3150001", name: "Design Engineering - II A" },
+            { code: "3150004", name: "Contributor Personality Development Program" },
+            { code: "3150005", name: "Integrated Personality Development Course" },
+            { code: "3151908", name: "Control Engineering" },
+            { code: "3151909", name: "Heat Transfer" },
+            { code: "3151910", name: "Operation Research" },
+            { code: "3151911", name: "Dynamics of Machinery" },
+            { code: "3151912", name: "Manufacturing Technology" },
+            { code: "3151913", name: "Oil Hydraulics And Pneumatics" },
+            { code: "161901", name: "Dynamics of Machinery" },
+            { code: "161902", name: "Internal Combustion Engines" },
+            { code: "161903", name: "Computer Aided Design" },
+            { code: "161904", name: "Alternate Energy Sources" },
+            { code: "161905", name: "Control Engineering" },
+            { code: "161906", name: "Heat and Mass Transfer" },
+            { code: "161907", name: "Industrial Engineering" },
+            { code: "2160001", name: "Design Engineering - II B" },
+            { code: "2170203", name: "Vehicle Dynamics" },
+            { code: "2171901", name: "Operation Research" },
+            { code: "2171903", name: "Computer Aided Manufacturing" },
+            { code: "2171909", name: "Machine Design" },
+            { code: "2171910", name: "Power Plant Engineering" },
+            { code: "2171911", name: "Advance Heat Transfer" },
+            { code: "2171912", name: "Oil Hydraulics and Pneumatics" },
+            { code: "2171913", name: "Metal Forming Analysis" },
+            { code: "2171914", name: "Gas Dynamics" },
+            { code: "2171916", name: "Applied Mechanics of Solids" },
+            { code: "3170001", name: "Summer Internship" },
+            { code: "3171506", name: "Project Management" },
+            { code: "3171910", name: "Power Plant Engineering" },
+            { code: "3171911", name: "Advanced Heat Transfer" },
+            { code: "3171917", name: "Design of Machine Elements" },
+            { code: "3171918", name: "Refrigeration and Air conditioning" },
+            { code: "3171919", name: "Cryogenics Engineering" },
+            { code: "3171920", name: "Finite Element Methods" },
+            { code: "3171921", name: "Metal forming analysis" },
+            { code: "3171922", name: "Automation in Manufacturing" },
+            { code: "3171923", name: "Internal Combustion Engine" },
+            { code: "3171924", name: "Principles of Combustion" },
+            { code: "3171925", name: "Advanced Machine Design" },
+            { code: "3171926", name: "Rapid Prototyping" },
+            { code: "3171927", name: "Turbo Machines" },
+            { code: "3171928", name: "Design of Material Handling Equipment" },
+            { code: "3171929", name: "Quality and Reliability Engineering" },
+            { code: "3171930", name: "Industrial Internet of Things" },
+            { code: "3171931", name: "Nanotechnology and surface Engineering" },
+            { code: "181901", name: "Refrigeration And Air- conditioning" },
+            { code: "181902", name: "Machine Design II" },
+            { code: "181903", name: "Production Technology" },
+            { code: "181904", name: "Thermal Engineering" },
+            { code: "181905", name: "Industrial Safety & Maintenance Engineering" },
+            { code: "181906", name: "Gas Dynamics" },
+            { code: "181907", name: "Automobile Body Engineering" },
+            { code: "181908", name: "Machine Tool Design" },
+            { code: "181909", name: "Project -II" },
+            { code: "2181909", name: "Project – II" },
+            { code: "2181910", name: "Renewable Energy Engineering" },
+            { code: "2181911", name: "Finite Elements Method" },
+            { code: "2181912", name: "Optimization" },
+            { code: "2181913", name: "Product Design and Value Engineering" },
+            { code: "2181914", name: "Rapid Prototyping" },
+            { code: "2181915", name: "Automobile Engineering" },
+            { code: "2181916", name: "Energy Conservation and Management" },
+            { code: "2181917", name: "Cryogenic Engineering" },
+            { code: "2181918", name: "Principles of Combustion Engineering" },
+            { code: "2181919", name: "Robotics" },
+            { code: "2181920", name: "Quality Engineering" },
+            { code: "2181921", name: "Design for Manufacturing and Assembly" },
+            { code: "2181922", name: "Automation" },
+            { code: "2181923", name: "Enterpreneurship" },
+            { code: "2181924", name: "Design of Heat Exchanger" },
+            { code: "2181925", name: "Computational Fluid Dynamics" },
+            { code: "2181926", name: "Tribology" },
+            { code: "2181927", name: "Advance Welding Technology" },
+            { code: "3181901", name: "Internship/Project" }
+        ]
+    };
+
+    let selectedBranch = "";
+    let selectedSubject = "";
+
+    // Function to reset the page state
+    function resetPageState() {
+        selectedBranch = "";
+        selectedSubject = "";
+        document.getElementById("branchSelect").value = "Select Branch";
+        document.getElementById("subjectSearch").value = "";
+        document.getElementById("subjectList").innerHTML = "";
+        document.getElementById("downloadBtn").style.display = "none";
+        document.getElementById("pdfPreview").innerHTML = "";
+    }
+
+    // Add event listener for page load and back/forward navigation
+    window.addEventListener('pageshow', function(event) {
+        resetPageState();
+    });
+
+    // Prevent caching of the page
+    window.onunload = function(){};
+
+    // Populate subject list based on selected branch
+    document.getElementById("branchSelect").addEventListener("change", function() {
+        selectedBranch = this.value;
+        updateSubjectList();
+        document.getElementById("downloadBtn").style.display = "none";
+        document.getElementById("pdfPreview").innerHTML = "";
+    });
+
+    // Filter subjects based on search input
+    function filterSubjects() {
+        updateSubjectList(document.getElementById("subjectSearch").value);
+    }
+
+    // Update subject list dynamically
+    function updateSubjectList(filter = "") {
+        const subjectList = document.getElementById("subjectList");
+        subjectList.innerHTML = ""; // Clear the list
+        if (selectedBranch && subjectsData[selectedBranch]) {
+            subjectsData[selectedBranch].forEach(subject => {
+                if (subject.name.toLowerCase().includes(filter.toLowerCase()) || subject.code.includes(filter)) {
+                    const li = document.createElement("li");
+                    li.textContent = `${subject.name} (Code: ${subject.code})`;
+                    li.addEventListener("click", function() {
+                        selectedSubject = subject;
+                        document.getElementById("downloadBtn").style.display = "block";
+                        // Collapse other subjects
+                        subjectList.innerHTML = "";
+                        const selectedLi = document.createElement("li");
+                        selectedLi.textContent = `${selectedSubject.name} (Code: ${selectedSubject.code})`;
+                        subjectList.appendChild(selectedLi);
+                        // Show PDF preview
+                        showPdfPreview(`syllabus/${selectedBranch}/${selectedSubject.code}.pdf`);
+                    });
+                    subjectList.appendChild(li);
+                }
+            });
+        }
+    }
+
+    // Handle download button click
+    document.getElementById("downloadBtn").addEventListener("click", function() {
+        if (selectedBranch && selectedSubject) {
+            const filePath = `syllabus/${selectedBranch}/${selectedSubject.code}.pdf`;
+            window.location.href = filePath;
+        }
+    });
+
+    // Show PDF preview
+    function showPdfPreview(url) {
+        const pdfPreview = document.getElementById("pdfPreview");
+        pdfPreview.innerHTML = ""; // Clear previous preview
+
+        const loadingTask = pdfjsLib.getDocument(url);
+        loadingTask.promise.then(function(pdf) {
+            // Fetch the first page
+            pdf.getPage(1).then(function(page) {
+                const scale = 1.5;
+                const viewport = page.getViewport({ scale: scale });
+
+                // Prepare canvas using PDF page dimensions
+                const canvas = document.createElement("canvas");
+                const context = canvas.getContext("2d");
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                pdfPreview.appendChild(canvas);
+
+                // Render PDF page into canvas context
+                const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            });
+        }, function(reason) {
+            console.error(reason);
+            pdfPreview.innerHTML = "Failed to load PDF preview.";
+        });
+    }
+        // Dynamically update meta tags
+        function updateMetaTags(branch, subject) {
+            const metaDescription = document.querySelector('meta[name="description"]');
+            const metaKeywords = document.querySelector('meta[name="keywords"]');
+            const metaOgTitle = document.querySelector('meta[property="og:title"]');
+            const metaOgDescription = document.querySelector('meta[property="og:description"]');
+
+            const description = `Find and download the syllabus and previous year question papers for ${branch} - ${subject}. Your one-stop resource for GTU academic materials.`;
+            const keywords = `GTU, ${branch}, ${subject}, syllabus, question papers, engineering, BE, Gujarat Technological University`;
+
+            metaDescription.setAttribute("content", description);
+            metaKeywords.setAttribute("content", keywords);
+            metaOgTitle.setAttribute("content", `GTU Syllabus Finder | ${branch} - ${subject}`);
+            metaOgDescription.setAttribute("content", description);
+        }
+
+        // Call updateMetaTags when a subject is selected
+        document.getElementById("branchSelect").addEventListener("change", function() {
+            const branch = this.options[this.selectedIndex].text;
+            if (selectedSubject) {
+                updateMetaTags(branch, selectedSubject.name);
+            }
+        });
+    </script>
+
+<footer>
+    <p>&copy; 2024 GTU Syllabus & PYQs Hub</p>
+</footer>
+</body>
+</html>
+    
+
+   
